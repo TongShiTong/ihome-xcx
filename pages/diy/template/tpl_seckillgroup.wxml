@@ -1,0 +1,42 @@
+<view class="seckill-group >" style="margin-top: {{diyitem.style.margintop}}px;" wx:if="{{diyitem.data}}">
+    <navigator url="/seckill/pages/index/index" hover-class="none">
+        <view class="seckill-title" style="background:url({{diyitem.params.iconurl}}) no-repeat;background-size: 100% 100%;margin: 0 20rpx;height: 90rpx;">
+            <view class="seckill-text">
+                <!-- <image src="{{diyitem.params.iconurl}}" mode="aspectFill"></image> -->
+           
+                <text class="title" style="font-size:30rpx;">{{diyitem.data.time}}点场 {{diyitem.data.status==1?'距开始':'距结束'}} </text>
+              
+                <view class="killtime" style="color: #2D1D25;">
+                    <span class="item" style="background:#fff;">{{hour}}</span>
+                    <d style="color:#fff"> : </d>
+                    <span class="item" style="background:#fff;">{{min}}</span>
+                    <d style="color:#fff"> : </d>
+                    <span class="item" style="background:#fff;">{{sec}}</span>
+                </view>
+            </view>
+            <!-- <view class="seckill-remark" style="color:{{diyitem.style.titlecolor}};">
+                <span>更多</span>
+                <icon class="icox icox-qianjin-copy"></icon>
+            </view> -->
+        </view>
+      </navigator>
+        <scroll-view scrollX style="width: 100%">
+            <view class="seckill-goods">
+                <view class="item" wx:for="{{diyitem.data.goods}}" wx:for-item="goods_item" wx:key="index">
+                  <navigator url="/pages/goods/detail/index?id={{goods_item.id}}" hover-class="none">
+                    <view class="thumb">
+                        <image src="{{goods_item.thumb}}"></image>
+                    </view>
+                    <view class="marketprice" style="color:{{diyitem.style.marketpricecolor}};">￥{{goods_item.price}}</view>
+                    <view class="productprice" style="color:{{diyitem.style.productpricecolor}};">￥{{goods_item.marketprice}}</view>
+                  </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    <navigator url="/seckill/pages/index/index" hover-class="none">
+      <view class="more">
+        <view class="more-pin">更多秒杀</view>
+      </view>
+    </navigator>
+    <view style="background:#fff;height:40rpx;"></view>
+</view>

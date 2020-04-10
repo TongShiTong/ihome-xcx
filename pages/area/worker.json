@@ -1,0 +1,10 @@
+{
+  "backgroundColor": "#6B0415",
+  "navigationBarBackgroundColor": "#6B0415",
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "设计师案例",
+  "usingComponents": {},
+  "onReachBottomDistance": 50
+}

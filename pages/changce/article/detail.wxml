@@ -1,0 +1,44 @@
+<import src="/utils/wxParse/wxParse.wxml"></import>
+<loading wx:if="{{!show}}">加载中...</loading>
+<block wx:if="{{show}}">
+    <view class="container">
+        <view class="detail">
+            <text class="title">{{article.article_title}}</text>
+            <view class="userinfo">
+                <view class="info1">
+                    <image src="{{article.resp_img}}"></image>
+                    <view class="v">v</view>
+                </view>
+                <view class="info2">
+                    <text class="name">{{article.article_mp}} {{article.article_author}}</text>
+                    <text class="time">{{article.article_date}}</text>
+                </view>
+            </view>
+            <view class="detailinfo">
+                <view class="wxParse">
+                    <template is="wxParse" data="{{wxParseData:wxParseData.nodes}}"></template>
+                </view>
+            </view>
+        </view>
+        <view class="envas">
+            <view bindtap="likeit" class="sc" style="background:none">
+                <view class="xin" style="margin:0 auto auto 3%">
+                    <text>
+          阅读 {{article.readnum}}
+          </text>
+                </view>
+            </view>
+            <view bindtap="likeit" class="sc" style="background:none">
+                <view class="xin" style="margin:0 4% auto 0;color:#17abe3;">
+                    <image src="/pages/changce/images/good.png"></image>
+                    <text>
+          {{likenum}}
+          </text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="phone" class="phone" data-phone="{{article.phone}}" style="{{article.phonecolor?'background-color:'+article.phonecolor:''}}" wx:if="{{article.phone}}">
+        <text class="icox icox-call"></text>
+    </view>
+</block>

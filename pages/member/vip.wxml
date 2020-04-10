@@ -1,0 +1,77 @@
+<view class="page page1">
+    <block>
+        <!-- <view class="fui-icon-group noborder col-4">
+            <navigator class="fui-icon-col external" url="../category/index?id={{item.id}}" wx:for="{{res.category}}">
+                <view class="icon">
+                    <image class="radius" src="{{item.thumb}}"></image>
+                </view>
+                <view class="text">
+            {{item.name}}
+          </view>
+            </navigator>
+        </view> -->
+        <view class="jxpt">
+          <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/uFH99HO0VH9VmFf8ss437AA08S3SAM.png"></image>
+        </view>
+        <view class="fui-list-group fui-list-group1">
+            <navigator class="fui-list fui-list1" url="/pages/goods/detail/index?id={{item.id}}" wx:for="{{list}}">
+                <view class="fui-list-media">
+                    <image class="radius" src="{{item.thumb}}"></image>
+                </view>
+                <view class="fui-list-inner">
+                  <view>
+                    <view class="des">
+                        {{item.title}}
+                    </view>
+                    <text class="person">会员价</text>
+                  </view>
+                  <view class="price1">
+                    <view>
+                      <view class="xianjia"><text style="font-size:24rpx;">￥</text>{{item.minprice}}</view>
+                      <view class="line">专柜价<text style="text-decoration: line-through;"> ￥{{item.productprice}}</text></view>
+                    </view>
+                    <view class="groupbtn">去购买</view>
+                  </view>
+                     
+                    <!-- <view class="price">
+                       
+                        
+                    </view> -->
+                </view>
+            </navigator>
+        </view>
+    </block>
+     <view class="fui-loading" wx:if="{{loading}}">
+        <view class="icon" style="color: #E5E5E5"></view>
+        <view class="text" style="color: #E5E5E5">正在加载</view>
+    </view>
+    <view class="fui-loading" wx:if="{{list.length==count&&count>0}}">
+        <view class="text" style="background: none;color: #E5E5E5">———— 没有更多了 ————</view>
+    </view>
+    <view class="fui-loading" wx:if="{{count<=0&&!loading}}">
+        <view class="text" style="background: none;color: #E5E5E5">暂时没有任何商品</view>
+    </view>
+    <!-- <view class="fui-navbar footer-nav {{iphonexnavbar}}">
+        <navigator class="nav-item" hoverClass="none" openType="switchTab" url="/pages/index/index">
+            <span class="icox icox-back"></span>
+            <span class="label">返回商城</span>
+        </navigator>
+        <navigator class="nav-item active" hoverClass="none" openType="reLaunch">
+            <span class="icox icox-shouye1"></span>
+            <span class="label">拼团首页</span>
+        </navigator>
+        <navigator class="nav-item" hoverClass="none" openType="reLaunch" url="../category/index">
+            <span class="icox icox-quanbukanjia"></span>
+            <span class="label">活动列表</span>
+        </navigator>
+        <navigator class="nav-item" hoverClass="none" openType="reLaunch" url="../order/index">
+            <span class="icox icox-kanjiazhong"></span>
+            <span class="label">我的订单</span>
+        </navigator>
+        <navigator class="nav-item" hoverClass="none" openType="reLaunch" url="../mygroups/index">
+            <span class="icox icox-yigoumai"></span>
+            <span class="label">我的团</span>
+        </navigator>
+    </view>
+    <view class="{{isIpx?'fui-iphonex-button':''}}"></view> -->
+</view>

@@ -1,0 +1,37 @@
+<view class="page-goods-detail page-goods-detail1" wx:if="{{goods['seckillinfo']}}">
+  <image class="image" src="/static/images/pintuan-bg.png"></image>
+    <view class="seckill-container  {{diyitem.style.theme}}">
+        <view class="fui-list seckill-list">
+            <view class="fui-list-inner">
+                <view class="fui-list-media seckill-price">
+                    <span style="font-size:30rpx;">¥</span><span> {{goods['seckillinfo']['price']}}</span>
+                </view>
+                <view class="text">
+                    <span class="oldprice oldprice1">￥ {{goods['productprice']}}</span>
+                </view>
+            </view>
+        </view>
+        <view class="fui-list seckill-list1">
+            <view class="fui-list-inner">
+                <view class="text ">
+                    已出售 {{goods['seckillinfo']['percent']}}%
+                </view>
+                <view class="text ">
+                    <span class="process">
+                        <view class="process-inner" style="width:{{goods['seckillinfo']['percent']}}%"></view>
+                    </span>
+                </view>
+            </view>
+        </view>
+        <view class="fui-list seckill-list2" style="">
+            <view class="fui-list-inner">
+                <view class="text ">距离{{goods['seckillinfo']['status']==1?'开始':'结束'}}</view>
+                <view class="text timer">
+                    <span class="time-hour">{{hour}}</span> :
+                    <span class="time-min">{{min}}</span> :
+                    <span class="time-sec">{{sec}}</span>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

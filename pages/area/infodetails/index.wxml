@@ -1,0 +1,28 @@
+<!-- <view class="info">
+  <view class="infoname">
+   <view class="name">西西酱 <text>意中人</text></view>
+   <view class="guanzhu">关注</view>
+  </view>
+  <view class="slogn">恋居恋好物，用心来生活</view>
+  <view class="fensi">
+    <view style="margin-right:67rpx;">6588 <text>粉丝</text></view>
+    <view>27 <text>关注</text></view>
+  </view>
+  <view class="anli">案例121</view>
+</view>
+<view class="content">
+  西西酱
+</view>
+
+
+<view style="height: 160rpx;"></view>
+<view class="yuyue">
+  <view class="gz">关注</view>
+  <view class="yysjs">预约设计师</view>
+</view> -->
+
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <web-view src="https://shop5.jiuduanfw.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=sns.user&id={{uid}}&mid=2"></web-view>
+  </view>
+</view>

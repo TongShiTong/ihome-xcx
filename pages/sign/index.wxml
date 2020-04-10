@@ -1,0 +1,35 @@
+<!--pages/sign/index.wxml-->
+<view class="img1">
+  <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/03/RU28Hc49fdul288s8wDUDu22scdl7w.png"></image>
+</view>
+<view class="img2">
+  <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/03/WDqp15t0RR6p56tp26T2XGgd2P555Z.png"></image>
+</view>
+
+<navigator url="/pages/sign/signList?id={{item.id}}" wx:for="{{list}}">
+  <view class="img3">
+    <image src="{{item.banner}}" mode="aspectFit"></image>
+  </view>
+  <view class="sign">
+   <view class="logo-img">
+    <image src="{{item.logo}}" mode="aspectFit"></image>
+   </view>
+   <view class="info">
+    <view class="title">{{item.merchname}}</view>
+    <view class="desc">{{item.desc}}</view>
+   </view>
+  </view>
+</navigator>
+
+<!-- <view class="img3">
+  <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/03/T200dsL3uz2sna2W30tUxV22S32nQ0.png" mode="aspectFit"></image>
+</view> -->
+<!-- <view class="img4">
+  <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/03/D20MtRf92MCrkp490xwX0k8xDXTTxX.png"></image>
+</view>
+<view class="img5">
+  <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/03/cTFtKr6wF6O6rk94rRrw9Fohz6FsWR.png"></image>
+</view>
+<view class="img6">
+  <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/03/C5900V094X4A40CPZ0s5Y4409T4Cz0.png"></image>
+</view> -->

@@ -1,0 +1,26 @@
+<!--pages/sign/signList.wxml-->
+<view class="img1">
+  <image src="{{banner.banner}}" mode="aspectFit"></image>
+</view>
+<view class="goods-info">
+  <navigator class="info-content" url="/pages/goods/detail/index?id={{item.id}}" wx:for="{{list}}">
+    <view class="ic-img"><image src="{{item.thumb}}" mode="aspectFit"></image></view>
+    <view class="info-title">
+      <view class="box-title">{{item.title}}</view>
+      <view class="yishou">
+        <view><text style="font-size:24rpx;">￥</text>{{item.minprice}}</view>
+        <view class="ys">已售{{item.sales}}件</view>
+      </view>
+    </view>
+  </navigator>
+</view>
+ <view class="fui-loading" wx:if="{{loading}}">
+      <view class="icon"></view>
+      <view class="text">正在加载</view>
+  </view>
+  <view class="fui-loading empty" wx:if="{{list.length==count&&count>0}}">
+      <view class="text">没有更多了</view>
+  </view>
+  <view class="fui-loading empty" wx:if="{{count<=0&&!loading}}">
+      <view class="text">暂时没有任何商品</view>
+  </view>

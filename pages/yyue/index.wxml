@@ -1,0 +1,5 @@
+<view class="page-body">
+    <view class="page-section page-section-gap">
+      <web-view src="https://shop5.jiuduanfw.com/sns/#/pages/index/index?uid={{uid}}"></web-view>
+    </view>
+  </view>

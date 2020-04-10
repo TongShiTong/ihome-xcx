@@ -1,0 +1,23 @@
+<!-- <view class="diy-coupon col-{{diyitem.params.couponstyle}}" style="background:{{diyitem.style.background}};margin:{{diyitem.style.margintop==0?0:diyitem.style.margintop+'rpx'}} {{diyitem.style.marginleft==0?0:diyitem.style.marginleft+'rpx'}}"> -->
+<view class="diy-coupon col-{{diyitem.params.couponstyle}}" style="background:{{diyitem.style.background}};margin-top:874rpx;">
+    <navigator class="diy-coupon-item diy-coupon-item1" url="/pages/sale/coupon/index/index">
+      <view>先领券再购物</view>
+      <view style="font-size:18rpx;">更多优惠</view>
+      <view class="zs1"></view>
+      <view class="zs2"></view>
+    </navigator>
+    <navigator class="diy-coupon-item" style="background:{{diyitem.style.background}};padding:{{diyitem.style.margintop==0?0:diyitem.style.margintop+'rpx'}} {{diyitem.style.marginleft==0?0:diyitem.style.marginleft+'rpx'}}" url="/pages/sale/coupon/detail/index?id={{childitem.couponid}}" wx:for="{{diyitem.data}}" wx:for-index="childid" wx:for-item="childitem" wx:key="index">
+        <view class="inner" style="background:{{childitem.couponcolor=='#fd72d4'?'#ffffff':childitem.couponcolor}}">
+            <view class="infoinner">
+              <view class="price">{{childitem.price}}</view>
+              <view class="name">{{childitem.name}}</view>
+              <view class="desc">{{childitem.desc}}</view>
+            </view>
+            <view class="receive">领取</view>
+            <!-- <view class="point pointleft" style="background:{{diyitem.style.background}}"></view>
+            <view class="point pointright" style="background:{{diyitem.style.background}}"></view> -->
+            <view class="zs1"></view>
+            <view class="zs2"></view>
+        </view>
+    </navigator>
+</view>

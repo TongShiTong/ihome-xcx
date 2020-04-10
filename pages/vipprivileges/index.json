@@ -1,0 +1,9 @@
+{
+  "backgroundColor": "#422b2e",
+  "navigationBarBackgroundColor": "#422b2e",
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "会员专享权益",
+  "usingComponents": {}
+}

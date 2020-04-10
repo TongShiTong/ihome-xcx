@@ -1,0 +1,85 @@
+/* pages/sign/index.wxss */
+.img1 {
+  width: 750rpx;
+  height: 332rpx;
+}
+.img1 image{
+  width: 100%;
+  height: 100%;
+}
+.img2 {
+  width: 750rpx;
+  height: 327rpx;
+}
+.img2 image{
+  width: 100%;
+  height: 100%;
+}
+.img3 {
+  width: 750rpx;
+  height: 428rpx;
+}
+.img3 image{
+  width: 100%;
+  height: 100%;
+}
+.img4 {
+  width: 750rpx;
+  height: 201rpx;
+}
+.img4 image{
+  width: 100%;
+  height: 100%;
+}
+.img5 {
+  width: 750rpx;
+  height: 392rpx;
+}
+.img5 image{
+  width: 100%;
+  height: 100%;
+}
+.img6 {
+  width: 750rpx;
+  height: 201rpx;
+}
+.img6 image{
+  width: 100%;
+  height: 100%;
+}
+.sign {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 53rpx 26rpx;
+  box-sizing: border-box;
+  background: #FAFAFA;
+}
+.logo-img {
+  width: 120rpx;
+  height: 120rpx;
+  padding-right: 46rpx;
+}
+.logo-img image {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10rpx;
+}
+.desc {
+  font-size: 20rpx;
+  font-weight: 500;
+  color: #333333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.info {
+  width: 560rpx;
+}

@@ -1,0 +1,59 @@
+<!-- <view>
+  <swiper class="swiper">
+    <swiper-item wx:for="{{images}}" wx:for-index="idx" wx:key="key">
+      <image src="{{item}}" class="lb-img" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="gr-info">
+  <view class="info">
+    <view><image src="{{datail.avatar}}" mode="aspectFill"></image></view>
+    <view class="info-box">
+      <view class="name">{{datail.nickname}}</view>
+      <view>{{datail.sign}}</view>
+    </view>
+  </view>
+  <view class="guanzhu">关注</view>
+</view>
+<view class="content">
+  <rich-text nodes="{{datail.content}}"></rich-text>
+</view>
+<view class="fby">发布于{{datail.createtime_date}}</view>
+<view class="pinglun">
+  最新评论(361)
+</view>
+
+<view class="pinglun-box" wx:for="{{list}}" wx:for-index="idx" wx:key="key">
+  <view class="img-info"><image src="{{item.avatar}}" mode="aspectFill"></image></view>
+  <view>
+    <view class="pl-info">
+      <view>
+        <view class="pl-title">{{item.nickname}} <text class="louzhu" wx:if="{{item.member.id==member.id}}">楼主</text></view>
+        <view><rich-text nodes="{{item.content}}"></rich-text></view>
+      </view>
+      <view>
+      <i class="icon icon-good" wx:if="{{item.isgood==0}}"></i>
+      <i class="icon icon-appreciatefill" wx:if="{{item.isgood==1}}"></i> {{item.goodcount}}</view>
+    </view>
+    <view class="huifu" wx-if="{{item.parent}}">
+      <text style="color:#6B0415;margin-right:20rpx;">{{item.parent.nickname}}：</text> <view><rich-text nodes="{{item.parent.content}}"></rich-text></view>
+    </view>
+    <view class="time-box">
+      <view class="time">{{item.createtime}}</view>
+      <navigator hover-class="none" url="/pages/area/reply/index?id={{datail.id}}"><i class="icon icon-comment"></i> 回复</navigator>
+    </view>
+    <view style="width:100; height:30rpx;border-bottom: 1rpx solid #CCCCCC;"></view>
+  </view>
+</view>
+<view style="height:165rpx;"></view>
+<navigator hover-class="none" url="/pages/area/reply/index?id={{datail.id}}" class="add-pl">
+  <input placeholder="添加你的评论..." disabled="true"></input>
+</navigator> -->
+
+<view class="page-body">
+    <view class="page-section page-section-gap">
+      <web-view src="https://shop5.jiuduanfw.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=sns.post&mid=2&id={{cateid}}"></web-view>
+    </view>
+  </view>
+

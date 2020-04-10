@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="cells">
+        <view class="line">
+            <view class="name">小店名称</view>
+            <view class="input">
+                <input bindinput="shopName" placeholder="默认为您的昵称" type="text" value="{{shopName}}"></input>
+            </view>
+        </view>
+        <view class="line" style="height:150rpx">
+            <view class="name">Logo店招</view>
+            <view class="input fui-images">
+                <image catchtap="upload" class="image image-sm" data-index="{{index}}" data-type="image-preview" src="{{item}}" wx:for="{{imgs}}">
+                    <text catchtap="upload" class="image-remove" data-index="{{index}}" data-type="image-remove">
+                        <text class="icox icox-close"></text>
+                    </text>
+                </image>
+                <view catchtap="upload" class="fui-uploader fui-uploader-sm" data-type="image" style="width:150rpx;height:150rpx" wx:if="{{!imgs||imgs.length<2}}"></view>
+            </view>
+        </view>
+        <view class="line" style="height:50rpx">
+            <view class="name">注意事项</view>
+            <view class="input">上传图①为Logo，图②为店招！
+      </view>
+        </view>
+        <view class="textarea">
+            <textarea bindinput="shoptips" maxlength="200" placeholder="输入200字以内的小店简介" value="{{shoptips}}"></textarea>
+        </view>
+        <button bindtap="save" class="btn btn-lan" type="warn">保存设置</button>
+    </view>
+</view>

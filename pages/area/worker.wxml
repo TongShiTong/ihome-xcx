@@ -1,0 +1,58 @@
+
+ <view class="bj">
+    <view class="anli-tabs">
+      <view class="tabs" wx:for="{{sort}}" wx:for-index="idx" wx:key="key" bindtap="tabSort" data-id="{{item.id}}" data-title="{{item.title}}">
+        <view>
+          <image src="{{item.logo}}" mode="aspectFill"></image>
+        </view>
+        <view>{{item.title}}</view>
+        <view class="label">{{item.desc}}</view>
+      </view>
+    </view>
+ </view>
+
+  <view class="tabs-box {{curClass}}">
+    <block wx:for="{{['最新','热门','推荐','关注']}}" wx:key="id">
+      <view class="tabs-item {{currentTabsIndex == index?'selected':''}}" bindtap="onTabsItemTap" data-index="{{index}}">
+        {{item}}
+      </view>
+    </block>
+ </view>
+ 
+  <view class="anli {{curClass?'toplist':''}}">
+    <view class="anli-info" wx:for="{{list}}" wx:for-index="idx" wx:key="key">
+      <navigator hover-class="none" openType="navigate" url="/pages/area/casedetails/index?cate={{item.id}}">
+        <view class="image">
+          <image src="{{item.images[0]}}" mode="aspectFill"></image>
+        </view>
+        <view class="title">{{item.title}}</view>
+      </navigator>
+      <navigator hover-class="none" openType="navigate" url="/pages/area/infodetails/index?cate={{item.uid}}">
+        <view class="xx-info">
+          <view class="toux">
+            <image src="{{item.avatar}}" mode="aspectFill"></image>
+          </view>
+          <view><i class="icon icon-browse" style="margin-right:10rpx;"></i>{{item.views<=0? 0 : item.views}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="fui-loading" wx:if="{{loading}}">
+      <view class="icon"></view>
+      <view class="text">正在加载</view>
+  </view>
+  <view class="fui-loading empty" wx:if="{{list.length==count&&count>0}}">
+      <view class="text">没有更多了</view>
+  </view>
+  <view class="fui-loading empty" wx:if="{{count<=0&&!loading}}">
+      <view class="text">暂时没有任何案例</view>
+  </view>
+  <navigator class="yuyeu" url="/pages/yyue/index" hover-class="none">
+      <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/f0QPz67lgZ7D2UlzC0t6t60VuZpVq9.png"></image>
+  </navigator>
+<!-- <view class="page-body">
+    <view class="page-section page-section-gap">
+      <web-view src="https://shop5.jiuduanfw.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=sns&cid=2"></web-view>
+    </view>
+  </view> -->

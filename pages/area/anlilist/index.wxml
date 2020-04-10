@@ -1,0 +1,38 @@
+<view><image style="width:100%;height:300rpx;" src="{{banner.banner}}" mode="aspectFill"></image></view>
+<view class="anli">
+    <view class="anli-info" wx:for="{{list}}" wx:for-index="idx" wx:key="key">
+      <navigator openType="navigate" url="/pages/area/casedetails/index?cate={{item.id}}">
+        <view class="image">
+          <image src="{{item.images[0]}}" mode="aspectFill"></image>
+        </view>
+        <view class="title">{{item.title}}</view>
+      </navigator>
+      <navigator openType="navigate" url="/pages/area/infodetails/index?cate={{item.uid}}">
+        <view class="xx-info">
+          <view class="toux">
+            <image src="{{item.avatar}}" mode="aspectFill"></image>
+          </view>
+          <view><i class="icon icon-browse" style="margin-right:10rpx;"></i>{{item.views<=0? 0 : item.views}}</view>
+        </view>
+      </navigator>
+    </view>
+    
+  </view>
+  <view class="fui-loading" wx:if="{{loading}}">
+        <view class="icon"></view>
+        <view class="text">正在加载</view>
+    </view>
+    <view class="fui-loading empty" wx:if="{{list.length==count&&count>0}}">
+        <view class="text">没有更多了</view>
+    </view>
+    <view class="fui-loading empty" wx:if="{{count<=0&&!loading}}">
+        <view class="text">暂时没有任何案例</view>
+    </view>
+  <view class="fby-box">
+  <navigator class="yuyeu" url="/pages/yyue/index" hover-class="none">
+      <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/f0QPz67lgZ7D2UlzC0t6t60VuZpVq9.png"></image>
+  </navigator>
+  <navigator class="yuyeu" url="/pages/save/index?id={{bid}}" hover-class="none" style="margin-top:70rpx;" wx:if="{{status}}">
+      <image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/f0ZWirEM1h2rKSIgIGIE2iI5Hh2HRL.png"></image>
+  </navigator>
+</view>

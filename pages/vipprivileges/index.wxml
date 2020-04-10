@@ -1,0 +1,80 @@
+<!--pages/vipprivileges/index.wxml-->
+<view class="info">
+ <view class="avtar"><image src="{{member.avatar||'/static/images/noface.png'}}" mode="aspectFit"></image></view>
+ <view class="name">
+  <view class="name-box">{{member.nickname||'未更新用户信息'}}</view>
+  <view>{{member.levelname}}</view>
+ </view>
+ <!-- <view class="tiyan">体验会员</view>
+ <view class="tuijian"><image src="/static/images/tj.png"></image></view> -->
+</view>
+<view class="hybg">
+  <view class="shengji">
+   <view class="jies">
+    <image class="zusj" src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/g9Mi5mx8s8MiubTm0TSTMKssU1kmTx.png"></image>
+    <view class="sq">会员期间可为您节省10%</view>
+   </view>
+   <view class="caidan">
+    <view class="cd-box">
+     <view class="cd-img"><image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/sh95mF9lHtwmPzFxTcZ0Z5lAxoE4Rx.png"></image></view>
+     <view class="syqy">所有权益</view>
+     <view>vip会员</view>
+    </view>
+     <view class="cd-box">
+     <view class="cd-img"><image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/xIV7035373UiP3cI3Y771Y37p5n1pi.png"></image></view>
+     <view class="syqy">收益提升10%</view>
+     <view>自买返佣</view>
+    </view>
+     <view class="cd-box">
+     <view class="cd-img"><image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/E7PxN1ED3t4e3zPs47rrSxz7Nd245p.png"></image></view>
+     <view class="syqy">收益提升10%</view>
+     <view>分享返佣</view>
+    </view>
+   </view>
+   <view class="caidan">
+    <view class="cd-box">
+     <view class="cd-img"><image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/d4FF47UYuU9FHOy9VzflRJtLrv7gGU.png"></image></view>
+     <view class="syqy">奖励5%</view>
+     <view>直接粉丝出单</view>
+    </view>
+     <view class="cd-box">
+     <view class="cd-img"><image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/d4FF47UYuU9FHOy9VzflRJtLrv7gGU.png"></image></view>
+     <view class="syqy">奖励5%</view>
+     <view>间接粉丝出单</view>
+    </view>
+     <view class="cd-box">
+     <view class="cd-img"><image src="https://shop5.jiuduanfw.com/attachment/images/2/2020/04/SZqfL0lQSaAyWYzr9rwaQM5Q5lWwQq.png"></image></view>
+     <view class="syqy">设计方案</view>
+     <view>免费领取</view>
+    </view>
+   </view>
+   <navigator url="/pages/order/create/index?id=67&total=1&optionid=0&selectDate=undefined" hover-class="none">
+    <view class="ljsj">立刻升级</view>
+   </navigator>
+  </view>
+</view>
+
+<view class="hytj">———— 会员推荐 ————</view>
+<view class="goods-info">
+  <navigator class="info-content" url="/pages/goods/detail/index?id={{item.id}}" wx:for="{{list}}">
+    <view class="ic-img"><image src="{{item.thumb}}" mode="aspectFit"></image></view>
+    <view class="info-title">
+      <view class="box-title">{{item.title}}</view>
+      <view class="yishou">
+        <view><text style="font-size:24rpx;">￥</text>{{item.minprice}}</view>
+        <view class="ys">已售{{item.sales}}件</view>
+      </view>
+    </view>
+  </navigator>
+</view>
+
+ <!-- <view class="fui-loading" wx:if="{{loading}}">
+    <view class="icon"></view>
+    <view class="text">正在加载</view>
+</view>
+<view class="fui-loading" wx:if="{{list.length==count&&count>0}}">
+    <view class="text">没有更多了</view>
+</view>
+<view class="fui-loading" wx:if="{{count<=0&&!loading}}">
+    <view class="text">暂时没有任何商品</view>
+</view> -->

@@ -1,0 +1,186 @@
+/* pages/vipprivileges/index.wxss */
+.img1 {
+  width: 750rpx;
+  height: 420rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.img1 image{
+  width: 100%;
+  height: 100%;
+}
+.info {
+  width: 100%;
+  padding: 36rpx 30rpx 50rpx;
+  background: #422b2e;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.avtar {
+  width: 97rpx;
+  height: 97rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avtar image {
+  width: 100%;
+  height: 100%;
+}
+.name {
+  font-size: 22rpx;
+  color: #fff;
+}
+.name-box {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.tiyan {
+  font-size: 22rpx;
+  color: #E7D7AD;
+  border: 1rpx solid #E3CC9D;
+  border-radius: 18rpx;
+  line-height: 1;
+  padding: 8rpx 24rpx;
+  margin-left: 15rpx;
+  margin-top: -36rpx;
+  margin-right: 116rpx;
+}
+.hybg {
+  background: #422b2e;
+  width: 100%;
+  height: 380rpx;
+}
+.shengji {
+  margin: 0 25rpx;
+  border-radius: 25rpx;
+  background: #fff;
+  box-shadow: 0 0 20rpx 0rpx #fefefe;
+  padding-bottom: 43rpx;
+}
+.jies {
+  height: 130rpx;
+  margin: 0 30rpx;
+  text-align: center;
+  border-bottom: 1rpx dashed #E3CC9D;
+}
+.zusj {
+  width: 388rpx;
+  height: 34rpx;
+  margin: 38rpx 0 15rpx;
+}
+.sq {
+  color: #76471A;
+  font-size: 24rpx;
+}
+.caidan {
+  margin-top: 55rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cd-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20rpx;
+  color: #76471A;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 30rpx;
+  width: 30%;
+}
+.cd-img {
+  width: 86rpx;
+  height: 86rpx;
+}
+.cd-img image {
+  width: 100%;
+  height: 100%;
+}
+.syqy {
+  font-size: 26rpx;
+  margin: 26rpx 0 14rpx;
+}
+.ljsj {
+  width: 463rpx;
+  height: 78rpx;
+  border-radius: 40rpx;
+  margin: 65rpx auto 0rpx;
+  text-align: center;
+  line-height: 78rpx;
+  background: linear-gradient(to right,rgb(255,243,222),#EBD2AB);
+  color: #76471A;
+  font-weight: bold;
+  font-size: 24rpx;
+}
+.hytj {
+  font-size: 36rpx;
+  color: #432C2B;
+  font-weight: bold;
+  margin: 460rpx 0 50rpx;
+  text-align: center;
+}
+.goods-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20rpx 75rpx;
+  flex-wrap: wrap;
+}
+.info-content {
+  width: 346rpx;
+  border-radius: 14rpx;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.ic-img {
+  width: 100%;
+  height: 346rpx;
+}
+.ic-img image {
+  width: 100%;
+  height: 100%;
+}
+.info-title {
+  padding: 20rpx 18rpx 27rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+.box-title {
+  font-size: 24rpx;
+  color: #1A1A1A;
+  font-weight: bold;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.yishou {
+  font-size: 36rpx;
+  color: #EB3026;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 46rpx;
+}
+.ys {
+  font-size: 22rpx;
+  color: #999999;
+  font-weight: 500;
+}
+.tuijian {
+  width: 195rpx;
+  height: 50rpx;
+}
+.tuijian image {
+  width: 100%;
+  height: 100%;
+}
